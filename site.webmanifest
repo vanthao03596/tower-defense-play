@@ -1,0 +1,18 @@
+{
+  "name": "Iron Salvo — Pixel Art Tower Defense",
+  "short_name": "Iron Salvo",
+  "description": "Build gun nests, mortars and gas launchers, rally your squads and call in airstrikes. A free pixel-art tower defense game.",
+  "lang": "en",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#14170f",
+  "theme_color": "#14170f",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

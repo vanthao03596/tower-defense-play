@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <!-- Keep the title in step with documentTitle in src/content/skin/text.ts, which the game sets at boot. -->
+    <title>Iron Salvo — Pixel Art Tower Defense | Free Browser Game</title>
+    <meta name="description" content="Hold the line, Major! Build gun nests, mortars and gas launchers, rally your squads and call in airstrikes in Iron Salvo, a free pixel-art tower defense game." />
+    <meta name="keywords" content="Iron Salvo, tower defense, pixel art game, browser game, strategy game, free online game, military tower defense, HTML5 game" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://vanthao03596.github.io/tower-defense-play/" />
+
+    <!-- Icons and the installed app -->
+    <link rel="icon" href="./favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" href="./favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="./favicon-16.png" type="image/png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <meta name="theme-color" content="#14170f" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="application-name" content="Iron Salvo" />
+    <meta name="apple-mobile-web-app-title" content="Iron Salvo" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Link previews: Open Graph (Facebook, Discord, Zalo, Slack, LinkedIn) and X -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Iron Salvo" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://vanthao03596.github.io/tower-defense-play/" />
+    <meta property="og:title" content="Iron Salvo — Pixel Art Tower Defense" />
+    <meta property="og:description" content="Build gun nests, mortars and gas launchers, rally your squads and call in airstrikes. A free pixel-art tower defense game for phone and desktop browsers." />
+    <meta property="og:image" content="https://vanthao03596.github.io/tower-defense-play/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="The Iron Salvo logo beside a pixel-art jungle battle: towers and soldiers hold a winding road against enemy troops and bikers" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Iron Salvo — Pixel Art Tower Defense" />
+    <meta name="twitter:description" content="Build gun nests, mortars and gas launchers, rally your squads and call in airstrikes. A free pixel-art tower defense game for phone and desktop browsers." />
+    <meta name="twitter:image" content="https://vanthao03596.github.io/tower-defense-play/og-image.jpg" />
+    <meta name="twitter:image:alt" content="The Iron Salvo logo beside a pixel-art jungle battle: towers and soldiers hold a winding road against enemy troops and bikers" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://vanthao03596.github.io/tower-defense-play/#website",
+            "url": "https://vanthao03596.github.io/tower-defense-play/",
+            "name": "Iron Salvo",
+            "inLanguage": "en"
+          },
+          {
+            "@type": "VideoGame",
+            "@id": "https://vanthao03596.github.io/tower-defense-play/#game",
+            "name": "Iron Salvo",
+            "url": "https://vanthao03596.github.io/tower-defense-play/",
+            "description": "Hold the line, Major! Build gun nests, mortars and gas launchers, rally your squads and call in airstrikes in Iron Salvo, a free pixel-art tower defense game.",
+            "image": "https://vanthao03596.github.io/tower-defense-play/og-image.jpg",
+            "logo": "https://vanthao03596.github.io/tower-defense-play/logo.png",
+            "genre": ["Tower defense", "Strategy"],
+            "gamePlatform": ["Web browser", "PC", "Mobile"],
+            "applicationCategory": "GameApplication",
+            "operatingSystem": "Any",
+            "playMode": "SinglePlayer",
+            "inLanguage": "en",
+            "isAccessibleForFree": true,
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+            "isPartOf": { "@id": "https://vanthao03596.github.io/tower-defense-play/#website" }
+          }
+        ]
+      }
+    </script>
+
+    <style>html,body{background:var(--background,#14170f);overscroll-behavior:none;height:100%;margin:0;overflow:hidden}#game{touch-action:none;place-items:center;display:grid;position:fixed;inset:0;overflow:hidden}canvas{display:block}.visually-hidden{clip-path:inset(50%);white-space:nowrap;border:0;width:1px;height:1px;margin:-1px;padding:0;position:absolute;overflow:hidden}.no-script{text-align:center;color:#f1ecdc;place-content:center;gap:16px;padding:24px;font:16px/1.5 system-ui,sans-serif;display:grid;position:fixed;inset:0}.no-script img{width:min(328px,80vw);height:auto;image-rendering:pixelated;margin:0 auto}.no-script p{max-width:36em;margin:0}#boot{--u:2px;z-index:1;background:radial-gradient(ellipse 70% 60% at 50% 40%, #4650244d, transparent 70%), radial-gradient(ellipse 130% 110% at 50% 50%, transparent 50%, #0000008c), var(--background,#14170f);-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;touch-action:none;place-items:center;transition:opacity .45s ease-out;display:grid;position:fixed;inset:0;overflow:hidden}@supports (width:round(down, 1px, 1px)){#boot{--u:max(1px, round(down, min(100dvh / 290, 100dvw / 250), 1px))}@media (resolution>=2x){#boot{--u:max(.5px, round(down, min(100dvh / 290, 100dvw / 250), .5px))}}@media (resolution>=3x){#boot{--u:max(1px, round(down, min(100dvh / 290, 100dvw / 250), 1px / 3))}}}#boot.boot-done{opacity:0;pointer-events:none}#boot.boot-failed{cursor:pointer}#boot canvas,#boot img{image-rendering:pixelated;display:block}.boot-stack{flex-direction:column;align-items:center;display:flex}.boot-logo{width:calc(164 * var(--u));height:calc(118 * var(--u))}.boot-gauge{width:calc(168 * var(--u));height:calc(12 * var(--u));margin-top:calc(52 * var(--u));position:relative}.boot-stage{left:calc(-48 * var(--u));bottom:calc(13 * var(--u));width:calc(264 * var(--u));height:calc(50 * var(--u));pointer-events:none;position:absolute}.boot-bar{background:linear-gradient(#d9d55a 0 var(--u), #60530d 0 calc(10 * var(--u)), #5d500c 0 calc(11 * var(--u)), #4c2c06 0);box-shadow:0 0 0 var(--u) #1a1410;position:absolute;inset:0}.boot-bar:before,.boot-bar:after{content:"";top:calc(4 * var(--u));width:calc(3 * var(--u));height:calc(3 * var(--u));box-shadow:inset var(--u) var(--u) 0 #fcd950;background:#c47a06;position:absolute}.boot-bar:before{left:var(--u)}.boot-bar:after{right:var(--u)}.boot-track{inset:calc(2 * var(--u)) calc(5 * var(--u));box-shadow:inset 0 var(--u) 0 #0b0907;background:#1a1410;position:absolute;overflow:hidden}.boot-fill{width:calc(var(--fill,0) * var(--u));background:repeating-linear-gradient(to right, transparent 0 calc(7 * var(--u)), #350a02bf 0 calc(8 * var(--u))), linear-gradient(#fcf9aa 0 var(--u), #fcd950 0 calc(2 * var(--u)), #fcc30d 0 calc(3 * var(--u)), #fc9c02 0 calc(4 * var(--u)), #fa6501 0 calc(6 * var(--u)), #d33f01 0 calc(7 * var(--u)), #c53601 0);height:100%;box-shadow:inset calc(-1 * var(--u)) 0 0 #fff3b8}.boot-status{width:calc(170 * var(--u));height:calc(10 * var(--u));margin-top:calc(7 * var(--u))}.boot-tip{width:calc(240 * var(--u));height:calc(33 * var(--u));margin-top:calc(16 * var(--u));transition:opacity .22s}.boot-tip.boot-tip-out{opacity:0}@media (prefers-reduced-motion:reduce){#boot,.boot-tip{transition:none}}</style>
+    <noscript><style>#boot{display:none}</style></noscript>
+    <script type="module" crossorigin src="./assets/index-CLMLVb1D.js"></script>
+  </head>
+  <body>
+    <!-- The game is drawn on a canvas; these words are what readers, search engines and link previews can read. -->
+    <h1 class="visually-hidden">Iron Salvo — a pixel-art tower defense game</h1>
+    <p class="visually-hidden">Hold the line, Major. Build and upgrade gun nests, sniper towers, mortars, gas launchers, barracks and radio posts, lead Major Kestrel and his squads, and call in airstrikes to stop bikers, shield troopers, gyrocopters and assault carriers on the road to your base. Free to play in the browser on phone and desktop.</p>
+    <noscript>
+      <div class="no-script">
+        <img src="./logo.png" alt="Iron Salvo" width="656" height="472" />
+        <p>Iron Salvo is a free pixel-art tower defense game that plays in your browser. Turn on JavaScript to deploy.</p>
+      </div>
+    </noscript>
+    <div id="game"></div>
+    <div id="boot" role="progressbar" aria-label="Loading Iron Salvo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-busy="true">
+      <div class="boot-stack">
+        <img class="boot-logo" src="./logo.png" alt="" width="656" height="472" fetchpriority="high" />
+        <div class="boot-gauge">
+          <canvas class="boot-stage"></canvas>
+          <div class="boot-bar"><div class="boot-track"><div class="boot-fill"></div></div></div>
+        </div>
+        <canvas class="boot-status"></canvas>
+        <canvas class="boot-tip"></canvas>
+      </div>
+    </div>
+  </body>
+</html>
